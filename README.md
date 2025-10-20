@@ -1,6 +1,44 @@
+
 # Liquid State Analyzer Foundations
 
-Welcome to the Liquid State Analyzer Foundations project! This is a hands-on, step-by-step Python learning journey designed for students (especially Grade 8+) to build up their coding skills from variables to debugging. Each level is a Python file with guided exercises, TODOs, and instant feedback.
+Welcome to the Liquid State Analyzer Foundations project! This is a hands-on, step-by-step Python learning journey designed for you to build up your python coding skills from variables to debugging. Each level is a Python file with guided exercises, TODOs, and instant feedback.
+
+
+# Getting Started: How to Set Up Locally
+
+To work on this project on your own laptop, follow these steps:
+
+3. **Clone the Project from GitHub**
+
+   - Open your terminal 
+   - Run the following command:
+
+     ```bash
+     https://github.com/NoellaPromise/Liquid_State_Analyzer_Foundations.git
+     ```
+
+4. **Open the Project Folder**
+
+   - Navigate into the project folder:
+
+     ```bash
+     cd Liquid_State_Analyzer_Foundations
+     ```
+
+   - Or open the folder in your VS Code.
+
+5. **Start Coding!**
+
+   - Open the first level file and follow the instructions.
+   - Run Python files using:
+
+     ```bash
+     python3 Level1_Variables_datatypes.py
+     ```
+
+   - Or whichever level file you are working on.
+
+---
 
 ## How to work on this Project
 
