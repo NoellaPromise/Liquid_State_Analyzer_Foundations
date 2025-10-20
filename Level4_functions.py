@@ -4,32 +4,32 @@ freezing_points = [0, -39, -114, -210, -218]
 boiling_points = [100, 357, 78, -196, -183]
 
 # ============================================================================
-# PART 1: Simple Functions (No Parameters)
+# PART 12: Simple Functions (No Parameters)
 # ============================================================================
-print("📝 PART 1: Simple Functions")
+print("PART 1: Simple Functions")
 print("-" * 50)
 
-# TODO 1: Create a function called 'display_welcome' that prints a welcome message
+# TODO 17: Create a function called 'display_welcome' that prints a welcome message
 # Hint:
 # def display_welcome():
 #     print("Welcome to the Liquid State Analyzer!")
 #     print("This program analyzes liquid states based on temperature.")
 
 
-# TODO 2: Call the display_welcome function
+# TODO 18: Call the display_welcome function
 # Hint: Just write the function name with parentheses: display_welcome()
 
 
-# Testing Part 1
-print("\n✨ Part 1 Complete! You created and called a function!\n")
+# Testing Part 12
+print("\nCongrats! Part 12 complete — you created and called a function!\n")
 
 # ============================================================================
-# PART 2: Functions with Parameters
+# PART 13: Functions with Parameters
 # ============================================================================
-print("📝 PART 2: Functions with Parameters")
+print("PART 2: Functions with Parameters")
 print("-" * 50)
 
-# TODO 3: Create a function called 'display_liquid_info' that takes one parameter: index
+# TODO 19: Create a function called 'display_liquid_info' that takes one parameter: index
 # The function should print information about the liquid at that index
 #
 # Hint:
@@ -39,24 +39,24 @@ print("-" * 50)
 #     print(f"Boiling Point: {boiling_points[index]}°C")
 
 
-# TODO 4: Call display_liquid_info for the first liquid (index 0)
+# TODO 20: Call display_liquid_info for the first liquid (index 0)
 print("\nInformation about the first liquid:")
 
 
-# TODO 5: Call display_liquid_info for Mercury (index 1)
+# TODO 21: Call display_liquid_info for Mercury (index 1)
 print("\nInformation about Mercury:")
 
 
-# Testing Part 2
-print("\n✨ Part 2 Complete! You used function parameters!\n")
+# Testing Part 13
+print("\nCongrats! Part 13 complete — you used function parameters!\n")
 
 # ============================================================================
-# PART 3: Functions with Return Values
+# PART 14: Functions with Return Values
 # ============================================================================
-print("📝 PART 3: Functions with Return Values")
+print("PART 3: Functions with Return Values")
 print("-" * 50)
 
-# TODO 6: Create a function called 'get_state' that takes 3 parameters:
+# TODO 22: Create a function called 'get_state' that takes 3 parameters:
 # temperature, freezing_point, and boiling_point
 # The function should return "Solid", "Liquid", or "Gas" based on the temperature
 #
@@ -70,26 +70,27 @@ print("-" * 50)
 #         return "Gas"
 
 
-# TODO 7: Test the get_state function
+# TODO 23: Test the get_state function
 # Call it with temperature=25, freezing_point=0, boiling_point=100
 # Store the result in a variable called 'water_state'
 
 
-# Testing Part 3
+# Testing Part 14
 try:
     print(f"\nWater at 25°C is in the {water_state} state")
-    print("✨ Part 3 Complete! You used return values!\n")
-except NameError:
-    print("❌ Not quite! You need to complete TODO 6-7 first.\n")
+    print("Congrats! Part 14 complete — you used return values!\n")
+except NameError as e:
+    print("Oops! You need to complete TODO 22-23 first.")
+    print(f"Error: {e}\n")
     exit()
 
 # ============================================================================
-# PART 4: Functions that Call Other Functions
+# PART 15: Functions that Call Other Functions
 # ============================================================================
-print("📝 PART 4: Functions Calling Functions")
+print("PART 4: Functions Calling Functions")
 print("-" * 50)
 
-# TODO 8: Create a function called 'analyze_liquid' that takes 2 parameters:
+# TODO 24: Create a function called 'analyze_liquid' that takes 2 parameters:
 # liquid_index and temperature
 # This function should:
 # 1. Get the liquid name, freezing point, and boiling point using the index
@@ -113,25 +114,25 @@ print("-" * 50)
 #     return state
 
 
-# TODO 9: Test the analyze_liquid function
+# TODO 25: Test the analyze_liquid function
 # Analyze Water (index 0) at -10°C
 print("\nTest 1:")
 
 
-# TODO 10: Analyze Nitrogen (index 3) at -200°C
+# TODO 26: Analyze Nitrogen (index 3) at -200°C
 print("\nTest 2:")
 
 
-# Testing Part 4
-print("\n✨ Part 4 Complete! Functions can call other functions!\n")
+# Testing Part 15
+print("\nCongrats! Part 15 complete — functions can call other functions!\n")
 
 # ============================================================================
-# PART 5: Input Validation Function
+# PART 16: Input Validation Function
 # ============================================================================
-print("📝 PART 5: Input Validation with Functions")
+print("PART 5: Input Validation with Functions")
 print("-" * 50)
 
-# TODO 11: Create a function called 'get_valid_choice' that takes no parameters
+# TODO 27: Create a function called 'get_valid_choice' that takes no parameters
 # This function should:
 # 1. Display all available liquids with numbers
 # 2. Use a while loop to get a valid choice (1-5)
@@ -152,16 +153,16 @@ print("-" * 50)
 #     return choice
 
 
-# Testing Part 5
-print("\n✨ Part 5 Complete! You created a validation function!\n")
+# Testing Part 16
+print("\nCongrats! Part 16 complete — you created a validation function!\n")
 
 # ============================================================================
-# PART 6: Main Program Function
+# PART 17: Main Program Function
 # ============================================================================
-print("📝 PART 6: Putting It All Together")
+print("PART 6: Putting It All Together")
 print("-" * 50)
 
-# TODO 12: Create a function called 'run_analyzer' that:
+# TODO 28: Create a function called 'run_analyzer' that:
 # 1. Calls display_welcome()
 # 2. Calls get_valid_choice() and stores the result
 # 3. Asks for a temperature
@@ -184,19 +185,19 @@ print("-" * 50)
 #     print("=" * 50)
 
 
-# TODO 13: Call the run_analyzer function to start the program
+# TODO 29: Call the run_analyzer function to start the program
 
 
 # ============================================================================
-# 🎉 CONGRATULATIONS!
+# CONGRATULATIONS!
 # ============================================================================
 print("\n" + "=" * 50)
-print("🎉 LEVEL 4 COMPLETE! 🎉")
+print("LEVEL 4 COMPLETE!")
 print("=" * 50)
 print("\nYou've learned:")
-print("✅ How to define functions with def")
-print("✅ How to use parameters (inputs)")
-print("✅ How to use return values (outputs)")
-print("✅ How to organize code with functions")
-print("✅ How functions can call other functions")
+print("How to define functions with def")
+print("How to use parameters (inputs)")
+print("How to use return values (outputs)")
+print("How to organize code with functions")
+print("How functions can call other functions")
 print("=" * 50)

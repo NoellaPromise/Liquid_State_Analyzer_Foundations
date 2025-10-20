@@ -1,7 +1,7 @@
 # ============================================================================
 # PART 3: Input and Output
 # ============================================================================
-print("📝 PART 3: Input and Output")
+print("PART 3: Input and Output")
 print("-" * 50)
 
 # TODO 7: Ask the user for their favorite liquid using input()
@@ -16,21 +16,23 @@ print("-" * 50)
 
 
 # Testing Part 3 - do not modify!
-print("\n✅ Testing Part 3...")
+print("\nTesting Part 3...")
 try:
-    print(f"\nYou entered:")
-    print(f"Favorite liquid: {favorite_liquid}")
-    print(f"Temperature: {temperature}°C")
-    print("✨ Part 3 Complete! You can get user input!\n")
+    print("\nYou entered:")
+    print("Favorite liquid: " + favorite_liquid)
+    print("Temperature: " + str(temperature) + "°C")
+    print(
+        "Congrats! You passed Part 3 — awesome job. Keep exploring and try different inputs!\n"
+    )
 except NameError as e:
-    print(f"❌ Not quite! You need to complete TODO 7-8 first.")
+    print("Oops! Looks like you missed TODO 7-8.")
     print(f"Error: {e}\n")
     exit()
 
 # ============================================================================
 # PART 4: Basic Operations
 # ============================================================================
-print("📝 PART 4: Basic Operations")
+print("PART 4: Basic Operations")
 print("-" * 50)
 
 # TODO 9: Calculate the temperature range (boiling_point - freezing_point)
@@ -43,20 +45,22 @@ print("-" * 50)
 
 
 # Testing Part 4 - do not modify!
-print("\n✅ Testing Part 4...")
+print("\nTesting Part 4...")
 try:
-    print(f"Temperature range for water: {temperature_range}°C")
-    print(f"Current temperature is {degrees_from_freezing}°C from freezing")
-    print("✨ Part 4 Complete! You can do math in Python!\n")
+    print("Temperature range for water: " + str(temperature_range) + "°C")
+    print("Current temperature is " + str(degrees_from_freezing) + "°C from freezing")
+    print(
+        "Congrats! You passed Part 4 — math master in the making. Try different temperatures to practice!\n"
+    )
 except NameError as e:
-    print(f"❌ Not quite! You need to complete TODO 9-10 first.")
+    print("Oops! You need to complete TODO 9-10 to finish this part.")
     print(f"Error: {e}\n")
     exit()
 
 # ============================================================================
 # PART 5: Conditional Statements
 # ============================================================================
-print("📝 PART 5: Conditional Statements")
+print("PART 5: Conditional Statements")
 print("-" * 50)
 
 print(f"\nAnalyzing {liquid_name} at {temperature}°C...")
@@ -77,35 +81,37 @@ print(f"\nAnalyzing {liquid_name} at {temperature}°C...")
 
 
 # Testing Part 5 - do not modify!
-print("\n✅ Testing Part 5...")
+print("\nTesting Part 5...")
 try:
-    print(f"\n🎯 RESULT: At {temperature}°C, {liquid_name} is in the {state} state!")
+    print(f"\nRESULT: At {temperature}°C, {liquid_name} is in the {state} state!")
 
     # Additional analysis
     if state == "Solid":
-        print(f"❄️  It needs to warm up {freezing_point - temperature}°C to melt.")
+        print(f"It needs to warm up {freezing_point - temperature}°C to melt.")
     elif state == "Liquid":
-        print(f"💧 It's {temperature - freezing_point}°C above freezing.")
-        print(f"💧 It's {boiling_point - temperature}°C below boiling.")
+        print(f"It's {temperature - freezing_point}°C above freezing.")
+        print(f"It's {boiling_point - temperature}°C below boiling.")
     else:
-        print(f"☁️  It's {temperature - boiling_point}°C above boiling!")
+        print(f"It's {temperature - boiling_point}°C above boiling!")
 
-    print("\n✨ Part 5 Complete! You mastered conditionals!\n")
+    # Friendly grade-8 style success message
+    print(
+        "\nEpic! You passed Part 5 — conditionals conquered. Great work! Keep experimenting and have fun coding."
+    )
 except NameError as e:
-    print(f"❌ Not quite! You need to complete TODO 11 first.")
+    print("Oops! You need to complete TODO 11 to analyze the state.")
     print(f"Error: {e}\n")
     exit()
 
 
-
 # ============================================================================
-# 🎉 CONGRATULATIONS!
+# CONGRATULATIONS!
 # ============================================================================
 print("=" * 50)
-print("🎉 LEVEL 2 COMPLETE! 🎉")
+print("LEVEL 2 COMPLETE!")
 print("=" * 50)
 print("\nYou've learned:")
-print("✅ How to get input from users")
-print("✅ How to do basic math operations")
-print("✅ How to make decisions with if/elif/else")
+print("How to get input from users")
+print("How to do basic math operations")
+print("How to make decisions with if/elif/else")
 print("=" * 50)

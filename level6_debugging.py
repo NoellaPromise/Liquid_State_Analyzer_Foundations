@@ -55,7 +55,7 @@ def display_liquid_info(liquid_index):
     freezing = freezing_points[liquid_index]
     boiling = boiling_points[liquid_index]
     
-    print(f"\n📊 Liquid Information:")
+    print(f"\nLiquid Information:")
     print(f"Name: {liquid_name}")
     print(f"Freezing Point: {freezeng}°C")  # BUG HERE - Typo in variable name
     print(f"Boiling Point: {boiling}°C")
@@ -72,7 +72,7 @@ def get_user_choice():
 # BUG 8: Missing 'f' in f-string
 # ============================================================================
 def display_state_analysis(liquid_name, temperature, state):
-    print("\n🔬 ANALYSIS COMPLETE!")
+    print("\nANALYSIS COMPLETE!")
     print("=" * 50)
     print("At {temperature}°C, {liquid_name} is: {state}")  # BUG HERE - Missing f before string
     print("=" * 50)
@@ -81,7 +81,7 @@ def display_state_analysis(liquid_name, temperature, state):
 # BUG 9: Index out of range
 # ============================================================================
 def compare_all_liquids(temperature):
-    print(f"\n🔍 All liquids at {temperature}°C:")
+    print(f"\nAll liquids at {temperature}°C:")
     for i in range(len(liquids) + 1):  # BUG HERE - Goes one past the end of list
         state = get_state(temperature, freezing_points[i], boiling_points[i])
         print(f"  {liquids[i]}: {state}")
@@ -138,7 +138,7 @@ def run_analyzer():
         boiling_points[liquid_index]
     )
     
-    print(f"\n📏 Temperature Distances:")
+    print(f"\nTemperature Distances:")
     print(f"Distance from freezing: {dist_freeze}°C")
     print(f"Distance from boiling: {dist_boil}°C")
     
@@ -147,13 +147,13 @@ def run_analyzer():
         temp_range = get_temperature_range(liquid_index)
         print(f"\nTemperature range for {liquid_name}: {temp_range}°C")
     except:
-        print("\n⚠️ Bug 10 still needs fixing in get_temperature_range function!")
+        print("\nBug 10 still needs fixing in get_temperature_range function!")
     
     # Compare all liquids (this will cause bug 9)
     try:
         compare_all_liquids(temperature)
     except:
-        print("\n⚠️ Bug 9 still needs fixing in compare_all_liquids function!")
+        print("\nBug 9 still needs fixing in compare_all_liquids function!")
     
     print("\n" + "=" * 50)
     print("Thank you for debugging!")
@@ -163,28 +163,28 @@ def run_analyzer():
 # START THE PROGRAM
 # ============================================================================
 if __name__ == "__main__":
-    print("🐛 DEBUG CHALLENGE: Find and fix all 10 bugs!")
-    print("💡 TIP: Fix ONE bug at a time, then run the program again.\n")
+    print("DEBUG CHALLENGE: Find and fix all 10 bugs!")
+    print("TIP: Fix ONE bug at a time, then run the program again.\n")
     
     try:
         run_analyzer()
         
         print("\n" + "=" * 50)
-        print("🎉 LEVEL 5 COMPLETE! 🎉")
+        print("LEVEL 6 COMPLETE!")
         print("=" * 50)
         print("\nYou've learned:")
-        print("✅ How to read error messages")
-        print("✅ How to fix syntax errors")
-        print("✅ How to fix logic errors")
-        print("✅ How to fix index errors")
-        print("✅ How to debug systematically")
-        print("\n🏆 Congratulations! You've completed all 4 levels!")
+        print("How to read error messages")
+        print("How to fix syntax errors")
+        print("How to fix logic errors")
+        print("How to fix index errors")
+        print("How to debug systematically")
+        print("\nCongratulations! You've completed all debugging challenges!")
         print("You're now ready to build your own Python projects!")
         print("=" * 50)
-        
+
     except Exception as e:
-        print(f"\n❌ ERROR FOUND!")
+        print(f"\nERROR FOUND!")
         print(f"Error type: {type(e).__name__}")
         print(f"Error message: {e}")
-        print("\n💡 Read the error message carefully - it tells you what's wrong!")
+        print("\nRead the error message carefully - it tells you what's wrong!")
         print("Fix the bug and run the program again.")
