@@ -14,7 +14,7 @@ To work on this project on your own laptop, follow these steps:
    - Run the following command:
 
      ```bash
-     https://github.com/NoellaPromise/Liquid_State_Analyzer_Foundations.git
+   git clone   https://github.com/NoellaPromise/Liquid_State_Analyzer_Foundations.git
      ```
 
 4. **Open the Project Folder**
