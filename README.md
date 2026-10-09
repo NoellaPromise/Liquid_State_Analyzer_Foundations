@@ -13,10 +13,8 @@ To work on this project on your own laptop, follow these steps:
    - Open your terminal 
    - Run the following command:
 
-     ```
    git clone   https://github.com/NoellaPromise/Liquid_State_Analyzer_Foundations.git
-     ```
-
+     
 4. **Open the Project Folder**
 
    - Navigate into the project folder:
